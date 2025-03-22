@@ -44,6 +44,7 @@ h1 {
 }
 
 .section {
+display:block;
   position: relative;
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
@@ -79,7 +80,7 @@ h1 {
 }
 
 .icon-link {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -92,8 +93,8 @@ h1 {
   );
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
-  width: 160px; /* Original size */
-  height: 60px; /* Original size */
+  width: 200px; /* Original size */
+  height: 300px; /* Original size */
   box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
 }
 
@@ -109,16 +110,16 @@ h1 {
 }
 
 .icon {
-  max-width: 140px;
-  max-height: 50px;
+  max-width: 100px;
+  max-height: 40px;
   width: auto;
   height: auto;
   object-fit: contain;
 }
 
 .poster {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -139,8 +140,8 @@ h1 {
   }
 
   .icon-link {
-    width: 140px; /* Slightly reduced for mobile */
-    height: 50px;
+    width: 350px; /* Slightly reduced for mobile */
+    height: 100px;
     padding: 8px;
   }
 
