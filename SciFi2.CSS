@@ -79,7 +79,7 @@ h1 {
 }
 
 .icon-link {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -92,8 +92,8 @@ h1 {
   );
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
-  width: 200px; /* Original size */
-  height: 300px; /* Original size */
+  width: 320px; /* Original size */
+  height: 320px; /* Original size */
   box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
 }
 
