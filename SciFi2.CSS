@@ -116,6 +116,14 @@ h1 {
   object-fit: contain;
 }
 
+.poster {
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .icon[src$=".svg"] {
   width: auto;
   height: 40px;
