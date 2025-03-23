@@ -281,7 +281,7 @@ p {
 }
 
 @keyframes textPulse {
-  0% { text-shadow: 0 0 10px #ff69b4; }
-  50% { text-shadow: 0 0 20px #ff69b4, 0 0 30px #9370db; }
-  100% { text-shadow: 0 0 10px #ff69b4; }
+  0% { text-shadow: 0 0 10px #5cb0f0; }
+  50% { text-shadow: 0 0 20px #5cb0f0, 0 0 30px #5cb0f0; }
+  100% { text-shadow: 0 0 10px #5cb0f0; }
 }
