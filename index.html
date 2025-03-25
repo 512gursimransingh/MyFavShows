@@ -8,17 +8,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="container">
-  <h1>My Watched Movies and Shows List!</h1>
+<div class="container" style="display: none;">
+  <h1>My Important Links List!</h1>
+<!--  <h1 style="visibility:hidden">My Watched Movies and Shows List!</h1>-->
+  <div style="display: none;">
   <h3>My Trakt Profile:
     <a href="https://trakt.tv/users/gcinetrakt" target="_blank">
         <img src="assets/trakt.svg" alt="trakt" class="icon">
     </a>
+<!--      <iframe height="315" width="100%" name="epicon" title="epicon" src="https://app.trakt.tv/"-->
+<!--              frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>-->
   </h3>
+  </div>
+</div>
 
+<div class="container">
+  <div class="section">
+    <h3>Live TV</h3>
+    <div class="section">
+      <iframe height="315" width="100%" name="live-tv" title="live-tv" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen
+      allow="fullscreen" srcdoc="<html><body style='color: white;text-align:center;font-weight:bold;text-transform:uppercase;'><h2>Choose any of the below channels to view Live TV.</h2></body><html>"></iframe>
+    </div>
+    <div>
+      <a target="live-tv" href="https://www.yupptv.com/fast-tv/pitaara-tv/live">
+        <img src="assets/pitaara-tv.jpg" alt="pitaara tv" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.yupptv.com/fast-tv/pitaara-comedy/live">
+        <img src="assets/pitaara-comedy.png" alt="pitaara comedy" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://tv.garden/in/FY1VLGbREDGrKy">
+        <img src="assets/ptc-punjabi.png" alt="PTC Punjabi" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://tv.garden/in/I4bi0cyOPNt9eJ">
+        <img src="assets/ptc-gold.png" alt="PTC Punjabi Gold" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/3132">
+        <img src="assets/pitaara-tv.jpg" alt="pitaara tv" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/3239">
+        <img src="assets/balle-balle.png" alt="balle-balle" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/3612">
+        <img src="assets/9xm.jpg" alt="9xm" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/5049">
+        <img src="assets/yrf-music.jpg" alt="yrf-music" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/5235">
+        <img src="assets/punjabi-hits.jpg" alt="punjabi-hits" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/3613">
+        <img src="assets/9x-jalwa.jpg" alt="9x-jalwa" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/3633">
+        <img src="assets/britasiatv.jpg" alt="britasiatv" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/5241">
+        <img src="assets/tabbar-hits.jpg" alt="tabbar-hits" class="live-tv-icon">
+      </a>
+      <a target="live-tv" href="https://www.epicon.in/distro-tv/4996">
+        <img src="assets/shemaroo-bollywood.jpg" alt="shemaroo-bollywood" class="live-tv-icon">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h3>TV PASS</h3>
+    <div class="section">
+      <iframe height="315" width="100%" name="live-tv" title="live-tv" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen allow="fullscreen" />
+<!--      src="https://thetvapp.to" loading="lazy"></iframe>-->
+    </div>
+  </div>
 </div>
 <!-- Favourite Shows Section -->
-<div class="section">
+<div class="section" style="display: none;">
     <h2 class="section-header">Favourite Shows</h2>
     <div class="poster-link">
       <p><img src="https://m.media-amazon.com/images/M/MV5BZjgzY2QyNzItNDhhYi00ZWIwLWFjN2UtZDJkN2MxYWNjMmJjXkEyXkFqcGc@._V1_.jpg"
@@ -54,7 +119,7 @@
       </p>
     </div>
 </div>
-<div class="yt-section">
+<div class="yt-section" style="display: none;">
   <h2 class="yt-section-header">Youtube Links</h2>
   <div class="youtube-link">
     <a href="https://www.youtube.com/watch?v=OVi2RiMyFTk" target="_blank">
@@ -71,17 +136,71 @@
     <p class="yt">LOVER</p>
   </div>
 </div>
-<div class="yt-section">
+<div class="yt-section" style="display: none;">
+<!--  style-="visibility: hidden;">-->
+  <h2 class="yt-section-header"><a class="link" target="yupp-tv" href="https://www.yupptv.com/fast-tv">YUPP TV</a></h2>
   <div>
-  <a target="yuppTv" href="https://www.yupptv.com/fast-tv/pitaara-tv/live">
+<!--    <button class="button" onClick="yuppTvToggle()"><span>Show Yupp Tv </span></button>-->
+  <a target="yupp-tv" href="https://www.yupptv.com/fast-tv/pitaara-tv/live">
     <img src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/mbzkrr.png" alt="pitaara tv" class="live-tv-icon">
   </a>
-  <a target="yuppTv" href="https://www.yupptv.com/fast-tv/pitaara-comedy/live">
+  <a target="yupp-tv" href="https://www.yupptv.com/fast-tv/pitaara-comedy/live">
     <img src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/wneior.png" alt="pitaara comedy" class="live-tv-icon">
   </a>
   </div>
-  <iframe height="315" width="100%" name="yuppTv" title="YuppTv" src="https://www.yupptv.com/fast-tv"
-  frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;autoplay;" allowfullscreen></iframe>
+<!--  <iframe class="video-section" id="yupp-tv-section" height="315" width="100%" name="yupp-tv" title="yupp-tv" src="https://www.yupptv.com/fast-tv"-->
+<!--  frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>-->
+<!--  <iframe height="315" width="100%" name="yuppTv" title="YuppTv" src="https://www.yupptv.com/fast-tv"-->
+<!--          frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;autoplay;" allowfullscreen></iframe>-->
+</div>
+<div class="yt-section" style="display: none;">
+  <h2 class="yt-section-header"><a class="link" target="tv-garden" href="https://tv.garden/in">TV Garden</a></h2>
+  <div>
+<!--    <button class="button" onClick="tvGardenToggle()"><span>Show Tv Garden </span></button>-->
+    <a target="tv-garden" href="https://tv.garden/in/FY1VLGbREDGrKy">
+      <img src="" alt="PTC Punjabi" class="live-tv-icon">
+    </a>
+    <a target="tv-garden" href="https://tv.garden/in/I4bi0cyOPNt9eJ">
+      <img src="" alt="PTC Punjabi Gold" class="live-tv-icon">
+    </a>
+  </div>
+<!--  <iframe class="video-section" id="tv-garden-section" height="315" width="100%" name="tv-garden" title="tv-garden" src="https://tv.garden/in"-->
+<!--          frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>-->
+</div>
+<div class="yt-section" style="display: none;">
+  <h2 class="yt-section-header"><a class="link" target="epic-on" href="https://www.epicon.in/distro-tv"><img src="https://source.epicon.in/epicon/assets/images/epicon-logo.png" alt="EPIC ON"></a></h2>
+  <div>
+<!--    <button class="button" onClick="epicOnToggle()"><span>Show Epic On </span></button>-->
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/3132">
+      <img src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/mbzkrr.png" alt="pitaara tv" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/3239">
+      <img src="assets/balle-balle.png" alt="balle-balle" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/3612">
+      <img src="assets/9xm.jpg" alt="9xm" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/5049">
+      <img src="assets/yrf-music.jpg" alt="yrf-music" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/5235">
+      <img src="assets/punjabi-hits.jpg" alt="punjabi-hits" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/3613">
+      <img src="assets/9x-jalwa.jpg" alt="9x-jalwa" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/3633">
+      <img src="assets/britasiatv.jpg" alt="britasiatv" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/5241">
+      <img src="assets/tabbar-hits.jpg" alt="tabbar-hits" class="live-tv-icon">
+    </a>
+    <a target="epic-on" href="https://www.epicon.in/distro-tv/4996">
+      <img src="assets/shemaroo-bollywood.jpg" alt="shemaroo-bollywood" class="live-tv-icon">
+    </a>
+  </div>
+<!--  <iframe class="video-section" id="epicon" height="315" width="100%" name="epic-on" title="epic-on" src="https://www.epicon.in/distro-tv"-->
+<!--          frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>-->
 </div>
 </body>
 </html>
