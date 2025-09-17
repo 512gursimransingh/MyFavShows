@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hindi Movie Channels</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindi Movie Channels</title>
 
-    <!-- iOS app settings -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Hindi Movie Channels">
-    <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- PWA manifest -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<h1>Hindi Movie Channels</h1>
-<div id="summary"></div>
 
-<div class="controls">
-    <input type="text" id="search" placeholder="Search channels...">
-    <select id="sort">
-        <option value="subs_desc" selected>Most Subs First</option>
-        <option value="subs_asc">Least Subs First</option>
-        <option value="az">Sort A → Z</option>
-        <option value="za">Sort Z → A</option>
-        <option value="new">Newly Added</option>
+<!-- Top Navbar -->
+<header class="top-navbar">
+  <div class="logo">🎬</div>
+  <input type="text" id="search" placeholder="Search channels...">
+  <div class="menu-icons">
+    <span class="material-icons">apps</span>
+    <span class="material-icons">account_circle</span>
+  </div>
+</header>
+
+<!-- Main Layout -->
+<div class="main-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <ul>
+      <li class="active">Home</li>
+      <li>Trending</li>
+      <li>Subscriptions</li>
+      <li>Library</li>
+    </ul>
+  </aside>
+
+  <!-- Content Area -->
+  <main class="content">
+    <div class="controls">
+      <select id="sort">
+        <option value="new" selected>Newly Added</option>
         <option value="old">Oldest Added</option>
-    </select>
+        <option value="az">A → Z</option>
+        <option value="za">Z → A</option>
+      </select>
+    </div>
+    <div class="channel-grid" id="channelList"></div>
+  </main>
 </div>
 
-<div class="channel-list" id="channelList"></div>
-
-<!-- Channel Data -->
-<script id="channelData" type="application/json">
-    [
-        { "url": "https://www.youtube.com/@SheemarooMovies", "subs": 32000000 },
-        { "url": "https://www.youtube.com/@Goldmines_Telefilms", "subs": 50000000 },
-        { "url": "https://www.youtube.com/@Rajshri", "subs": 31000000 },
-        { "url": "https://www.youtube.com/@Venus-Movies", "subs": 15000000 },
-        { "url": "https://www.youtube.com/@UltraMovies", "subs": 10000000 },
-        { "url": "https://www.youtube.com/@CinekornMovies", "subs": 7000000 }
-    ]
-</script>
-
-<!-- JavaScript -->
 <script src="script.js"></script>
 </body>
 </html>
