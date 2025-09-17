@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punjabi Movie Channels</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<header class="top-navbar">
+  <div class="logo">🎬</div>
+  <input type="text" id="search" placeholder="Search channels...">
+</header>
+
+<!-- Main Layout -->
+<div class="main-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <ul>
+      <li><a href="index.html">Hindi</a></li>
+      <li class="active">Punjabi</li>
+    </ul>
+  </aside>
+
+  <!-- Content Area -->
+  <main class="content">
+    <div class="controls">
+      <select id="sort">
+        <option value="new" selected>Newly Added</option>
+        <option value="old">Oldest Added</option>
+        <option value="az">A → Z</option>
+        <option value="za">Z → A</option>
+      </select>
+    </div>
+    <div class="channel-grid" id="channelList"></div>
+  </main>
+</div>
+
+<script src="punjabi-script.js"></script>
+</body>
+</html>
