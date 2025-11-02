@@ -63,7 +63,7 @@ const shows = {
         "Season 5 marked the first time all six main actors received equal pay per episode ($100,000 each).",
         "David Schwimmer and Jennifer Aniston agreed that Ross and Rachel should not reunite immediately, shaping the season's emotional arc.",
         "Matthew Perry began co-writing jokes for the show in Season 5, influencing Chandler's sarcasm-heavy dialogue.",
-        "The cast reportedly could not stop laughing during the filming of 'The One Where Everybody Finds Out' — the scene took 6 hours to complete."
+        "The cast reportedly could not stop laughing during the filming of 'The One Where Everybody Finds Out' — the scene took 6 hours to complete.",
         "Season 5's London-aftershock storyline was partly reshot due to audience reactions at the taping.",
         "Fans often rank this as one of the strongest seasons due to its balance of humor and emotional storytelling."
       ]},
